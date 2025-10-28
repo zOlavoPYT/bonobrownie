@@ -1,7 +1,3 @@
-Aqui está um README detalhado para o projeto, explicando o funcionamento, a implementação do Karate e os pré-requisitos, pronto para copiar e colar.
-
------
-
 # Projeto bonobrownie
 
 ## Visão Geral
