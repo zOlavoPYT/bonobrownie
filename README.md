@@ -2,13 +2,13 @@
 
 ## Visão Geral
 
-Este projeto consiste em uma aplicação de API desenvolvida em Python e um conjunto de testes de API automatizados utilizando o framework Karate. A aplicação Python (provavelmente uma API REST) é construída para ser executada com `uvicorn`, enquanto os testes são executados diretamente através do arquivo `karate-1.5.1.jar`.
+Este projeto consiste em uma aplicação de API desenvolvida em Python e um conjunto de testes de API automatizados utilizando o framework Karate. A aplicação Python é construída para ser executada com `uvicorn`, enquanto os testes são executados diretamente através do arquivo `karate-1.5.1.jar`.
 
 ## 1\. Como a Aplicação Funciona
 
 A aplicação principal reside no diretório `app/` e é gerenciada usando [Poetry](https://python-poetry.org/) para dependências.
 
-  * **Tecnologia:** A API é desenvolvida em Python. A instrução de execução `uvicorn app.main:app` indica que ela utiliza um framework ASGI (como FastAPI ou Starlette).
+  * **Tecnologia:** A API é desenvolvida em Python com FastAPI.
   * **Execução:** A aplicação é servida localmente usando o servidor ASGI `uvicorn`, que é iniciado através do Poetry para garantir que o ambiente virtual correto e as dependências sejam carregados.
 
 ## 2\. Implementação e Uso do `karate-1.5.1.jar`
@@ -55,7 +55,7 @@ Após a instalação das dependências, inicie a API com o comando fornecido:
 poetry run uvicorn app.main:app --reload
 ```
 
-A API estará em execução (geralmente em `http://127.0.0.1:8000`).
+A API estará em execução (em `http://127.0.0.1:8000`).
 
 ### Passo 3: Executar os Testes do Karate
 
